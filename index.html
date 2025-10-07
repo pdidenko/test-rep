@@ -71,9 +71,18 @@
     h1{
       margin:.2em 0 .1em;
       font-size:2.6rem;
-      color:var(--accent);
-      text-shadow:3px 3px 0 var(--peach);
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7, #dda0dd, #98d8c8);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: rainbow 3s ease-in-out infinite;
       letter-spacing:.5px;
+    }
+
+    @keyframes rainbow {
+      0%,100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
     }
     .age-badge{
       display:inline-block; background:var(--blue); color:#fff; padding:8px 18px;
@@ -215,7 +224,7 @@ END:VCALENDAR`;
     <figure aria-labelledby="cap">
       <div class="photo-frame">
         <!-- Замените src на фото Филиппа (например, src="philipp.jpg") -->
-        <img class="photo" alt="Фото именинника Филиппа на его 5-летии" src="0be4c5295df411ee991f36f52626dcc9_upscaled.jpeg">
+        <img class="photo" alt="Фото Филиппа" src="0be4c5295df411ee991f36f52626dcc9_upscaled.jpeg">
       </div>
       <figcaption id="cap">Именинник — Филипп</figcaption>
     </figure>
