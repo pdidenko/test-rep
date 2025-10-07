@@ -66,15 +66,16 @@
     }
 
     /* Фото */
-    figure{margin:18px auto 6px; width:210px}
+    figure{margin:18px auto 6px; width:250px}
     .photo-frame{
-      width:210px; height:210px; margin:0 auto; padding:10px;
+      width:250px; height:250px; margin:0 auto; padding:10px;
       background:#ffecb3; border-radius:50%; border:6px dotted var(--gold);
       display:grid; place-items:center;
     }
     .photo{
       width:100%; height:100%; border-radius:50%;
-      background:#fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><radialGradient id="g" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="%23ffe0b2"/><stop offset="1" stop-color="%23ffcc80"/></radialGradient></defs><circle cx="100" cy="70" r="40" fill="url(%23g)"/><rect x="35" y="110" width="130" height="60" rx="30" fill="%2390caf9"/><circle cx="120" cy="65" r="4" fill="%23445566"/><circle cx="80" cy="65" r="4" fill="%23445566"/><path d="M80 85 Q100 98 120 85" stroke="%23445566" stroke-width="4" fill="none"/></svg>') center/cover no-repeat;
+      object-fit: cover;
+      object-position: center top;
     }
     figcaption{font-size:.95rem; color:#7a6a57}
 
@@ -193,7 +194,7 @@ END:VCALENDAR`;
     <figure aria-labelledby="cap">
       <div class="photo-frame">
         <!-- Замените src на фото Филиппа (например, src="philipp.jpg") -->
-        <img class="photo" alt="Фото Филиппа" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><defs><radialGradient id='g' cx='50%' cy='40%' r='60%'><stop offset='0' stop-color='%23ffe0b2'/><stop offset='1' stop-color='%23ffcc80'/></radialGradient></defs><circle cx='100' cy='70' r='40' fill='url(%23g)'/><rect x='35' y='110' width='130' height='60' rx='30' fill='%2390caf9'/><circle cx='120' cy='65' r='4' fill='%23445566'/><circle cx='80' cy='65' r='4' fill='%23445566'/><path d='M80 85 Q100 98 120 85' stroke='%23445566' stroke-width='4' fill='none'/></svg>">
+        <img class="photo" alt="Фото Филиппа" src="0be4c5295df411ee991f36f52626dcc9_upscaled.jpeg">
       </div>
       <figcaption id="cap">Именинник — Филипп</figcaption>
     </figure>
